@@ -111,7 +111,7 @@
             UIAlertView *winAlert = [[UIAlertView alloc] initWithTitle:@"You win" message:@"ARRR, you killed that bastard" delegate:nil cancelButtonTitle:@"Awesome!" otherButtonTitles: nil];
             [winAlert show];
         }
-        NSLog(@"Enemy is %@. Your accuracy in this round was %i. Enemy health now at %i", enemy, fightRoundAccuracy, self.enemy.health);
+        NSLog(@"Enemy is %@. Your accuracy in this round was %i. Enemy health now at %i", self.enemy.name, fightRoundAccuracy, self.enemy.health);
 }
 }
 - (void)didReceiveMemoryWarning
